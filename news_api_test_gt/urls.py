@@ -16,10 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from authentication.urls import router
+from authentication.urls import router as auth_router
+from news.urls import router as news_router
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^api/auth/', include(router.urls)),
+    url(r'^api/auth/', include(auth_router.urls)),
+    url(r'^api/news/', include(news_router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
