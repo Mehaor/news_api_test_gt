@@ -8,3 +8,8 @@ class NewsPiece(models.Model):
     url = models.URLField(unique=True)
 
 
+class NewsGroup(models.Model):
+    name = models.CharField(max_length=200)
+    news = models.ManyToManyField('NewsPiece')
+
+
