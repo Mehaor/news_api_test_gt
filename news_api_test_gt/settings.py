@@ -50,7 +50,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'news_api_test.urls'
+ROOT_URLCONF = 'news_api_test_gt.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'news_api_test.wsgi.application'
+WSGI_APPLICATION = 'news_api_test_gt.wsgi.application'
 
 
 # Database
